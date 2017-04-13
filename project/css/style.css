@@ -2,6 +2,9 @@
 /*@import url(http://allfont.ru/allfont.css?fonts=montserrat-light);*/
 /*@import url(http://allfont.ru/allfont.css?fonts=montserrat-bold);*/
 
+html{
+    font-size: 62.5%;  /*1rem = 10px*/
+}
 
 .montserrat{
     font-family: 'Montserrat', sans-serif;
@@ -40,7 +43,13 @@
 /*--------------------header--------------------*/
 
 header{
-    margin-bottom: 32px;
+    margin-bottom: 2.9rem;/*29px*/
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;  /*1rem = 10px*/
+    }
 }
 
 .top-background {
@@ -131,7 +140,7 @@ header{
     display: flex;
     justify-content:space-between;
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
 }
 
 .header-nav ul{
@@ -212,3 +221,51 @@ header{
     right: -7px;
 }
 /*--------------------/header--------------------*/
+
+/*----------------------main---------------------*/
+/*----------------------main-brcum---------------*/
+
+.body-background{
+    background-color: #f7f7f7;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-brcum-background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7e7;
+    max-width:100%;
+    min-width: 13.83%;
+    height: 117px;
+}
+
+.main-brcum{
+    font-size: 3rem; /*30px*/
+    text-transform: uppercase;
+    color: #232323;
+    padding-left: 2.4%;
+}
+
+.main-brcum:last-child {
+    padding-right: 2.6%;
+    font-size: 1.4rem; /*14px*/
+    color: #666666;
+}
+
+.main-brcum-home, .main-brcum-products{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-brcum-home {
+    color: #999999;
+}
+/*----------------------/main-brcum--------------*/
+
+/*----------------------/main--------------------*/
