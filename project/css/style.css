@@ -1,19 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://allfont.ru/allfont.css?fonts=montserrat-light);
-@import url(http://allfont.ru/allfont.css?fonts=montserrat-bold);
+/*@import url(http://allfont.ru/allfont.css?fonts=montserrat-light);*/
+/*@import url(http://allfont.ru/allfont.css?fonts=montserrat-bold);*/
 
 
 .montserrat{
     font-family: 'Montserrat', sans-serif;
 }
 
-.montserrat_bold{
-    font-family: 'Montserrat Bold', sans-serif;
+.montserrat-bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
-.montserrat_light{
+.montserrat-light{
     font-family: 'Montserrat Light', sans-serif;
+    font-weight: 300;
 }
+
+.montserrat-semi-bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 
 .clearfix::after {
     content: '';
@@ -28,3 +36,180 @@
     margin: 0  auto;
     box-sizing: border-box;
 }
+
+/*--------------------header--------------------*/
+
+header{
+    margin-bottom: 32px;
+}
+
+.top-background {
+    background-color: #232323;
+}
+
+.page-header {
+    background-color: #2b2b2b;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 29px;
+}
+
+.header-phone a, .header-user a{
+    color: #7f7f7f;
+    text-decoration: none;
+}
+
+.header-phone, .header-user{
+    padding-top:4px;
+    padding-bottom: 8px;
+    line-height: 1.71;
+}
+
+.register{
+    padding-right: 12px;
+    padding-left: 7px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: block;
+    text-align: center;
+}
+
+@media (max-width:510px) {
+    .logo-container {
+        flex-direction: column;
+    }
+    .header-logo{
+        margin-bottom: 15px;
+    }
+}
+
+.header-search {
+    display: block;
+    border: 1px solid #323232;
+    box-sizing: border-box;
+    height: 46px;
+    border-radius: 26px 26px 26px 26px;
+}
+
+.header-search input {
+    display:inline-block;
+    vertical-align: middle;
+    width: 220px;
+    height: 44px;
+    padding-left: 25px;
+    border:none;
+    box-sizing: border-box;
+    background:none;
+    font-family: 'Montserrat Light', sans-serif;
+    font-weight:400;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.header-search button {
+    width: 55px;
+    height: 44px;
+    display:inline-block;
+    vertical-align: top;
+    background: url("/images/icon-header-search.png") center center  no-repeat;
+    border: none;
+    float: right;
+    padding-left: 25px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    padding-bottom: 15px;
+
+}
+
+.header-nav ul{
+    list-style: none;
+    margin-left: -10px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height:1.1;
+}
+
+.header-nav ul li{
+    display: inline-block;
+}
+
+.header-nav ul li+li{
+    margin-left: 24px;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.header-nav a:hover, .header-nav .current a {
+    color: #be926f;
+}
+
+@media (max-width:710px) {
+    .header-nav ul li+li {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:645px) {
+    .header-nav ul li+li {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:590px) {
+    .header-nav ul li{
+        display: block;
+    }
+}
+
+@media (max-width:510px) {
+    .header-search input{
+        width: calc(100% - 55px);
+    }
+}
+
+.header-cart {
+    position: relative;
+    background: url("images/icon-header-cart.png") center center no-repeat;
+    width: 17px;
+    height: 22px;
+    padding: 10px;
+    top: 22px;
+    left: -2px;
+}
+
+.cart-count {
+    color: #232323;
+    font-size: 12px;
+    background-color: #be926f;
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    position: relative;
+    top: -7px;
+    right: -7px;
+}
+/*--------------------/header--------------------*/
