@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://allfont.ru/allfont.css?fonts=montserrat-light);
+@import url(http://allfont.ru/allfont.css?fonts=montserrat-bold);
+
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat_bold{
+    font-family: 'Montserrat Bold', sans-serif;
+}
+
+.montserrat_light{
+    font-family: 'Montserrat Light', sans-serif;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    min-width: 320px;
+    margin: 0  auto;
+    box-sizing: border-box;
+}
