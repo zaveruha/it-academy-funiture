@@ -4,57 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ua/jquery-ui.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="css/slider.css" type="text/css" >
     <title>FUNITURE</title>
 </head>
-<body  class="body-background">
-    <!---------------------header--------------------------->
-    <header>
-        <div class="top-background">
-            <div class="page-header">
-                <div class="container">
-                    <div class="header-top montserrat-light">
-                        <div class="header-phone">
-                            <a href="tel:+123456789">(+123)456789</a>
-                        </div>
-                        <div class="header-user montserrat">
-                            <a href="#">  Log in </a> <span class="register">  or  </span> <a href="#"> Register</a>
+<body>
+    <div class="main-background-color">
+        <!---------------------header--------------------------->
+        <header>
+            <div class="top-background">
+                <div class="page-header">
+                    <div class="container">
+                        <div class="header-top montserrat-light">
+                            <div class="header-phone">
+                                <a href="tel:+123456789">(+123)456789</a>
+                            </div>
+                            <div class="header-user montserrat">
+                                <a href="#">  Log in </a> <span class="register">  or  </span> <a href="#"> Register</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="logo-container">
-                    <a class="header-logo" href="#">
-                        <img src="css/images/icon-header-logo.png" alt="" width="166" height="49">
-                    </a>
-                    <form class="header-search"  action="#">
-                        <input  type="search" placeholder="Search Products… " />
-                        <button ></button>
-                    </form>
+                <div class="container">
+                    <div class="logo-container">
+                        <a class="header-logo" href="#">
+                            <img src="css/images/icon-header-logo.png" alt="" width="166" height="49">
+                        </a>
+                        <form class="header-search"  action="#">
+                            <input  type="search" placeholder="Search Products… " />
+                            <button ></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="nav-container">
+                        <nav class="header-nav">
+                            <ul>
+                                <li class="current"><a href="#">Home</a></li>
+                                <li><a href="#">Living room</a></li>
+                                <li><a href="#">Office</a></li>
+                                <li><a href="#">Bedroom</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <a href="#" class="header-cart">
+                            <span class="cart-count" >2</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="nav-container">
-                    <nav class="header-nav">
-                        <ul>
-                            <li class="current"><a href="#">Home</a></li>
-                            <li><a href="#">Living room</a></li>
-                            <li><a href="#">Office</a></li>
-                            <li><a href="#">Bedroom</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <a href="#" class="header-cart">
-                        <span class="cart-count" >2</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!---------------------/header-------------------------->
-    <main>
+        </header>
+        <!---------------------/header-------------------------->
+        <main>
+
     <!---------------------main-brcum----------------------->
             <div class="container">
                 <div class="main-brcum-background">
@@ -67,14 +72,396 @@
                     </div>
                 </div>
             </div>
-    <!---------------------/main-brcum----------------------->
-        <section></section>
-    </main>
-    <footer>
-        <address>
 
-        </address>
+        <!---------------------/main-brcum----------------------->
+        <!---------------------main-thumb------------------------>
+        <!---------------------slider------------------------>
+            <div class="container">
+                <div class="main-thumb-container" >
+                    <div id="wrapper">
+                        <div id="left-side">
+                            <ul class="slider">
+                                <li class="item1 active">
+                                    <img src="images/icon-main-thumb-chair.png" width="140" height="180">
+                                </li>
+                                <li class="item2">
+                                    <img src="images/icon-main-thumb-chair-on-room.png" width="140" height="180">
+                                </li>
+                                <li class="item3">
+                                    <img src="images/icon-main-thumb-chair-on-kitchen.png" width="140" height="180">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="right-side">
+                            <div id="first" class="active">
+                                <img src="images/icon-main-thumb-bigchair.png" width="310" height="500">
+                            </div>
+                            <div id="second">
+                                <img src="images/icon-main-thumb-chair-on-room1.png" width="310" height="500">
+                            </div>
+                            <div id="third">
+                                <img src="images/icon-main-thumb-chair-on-kitchen1.png" width="310" height="500">
+                            </div>
+                        </div>
+                    </div>
+
+                <!---------------------slider------------------------>
+
+                    <div class="main-thumb-detail montserrat-semi-bold">
+                        <div class="main-thumb-detail-reivew"> Office chair</div>
+                        <img src="css/images/icon-main-star.png" width="16" height="15">
+                        <img src="css/images/icon-main-star.png" width="16" height="15">
+                        <img src="css/images/icon-main-star.png" width="16" height="15">
+                        <img src="css/images/icon-main-star.png" width="16" height="15">
+                        <img src="css/images/icon-main-star-gray.png" width="16" height="15">
+                        <span class="montserrat-light">(23 review)</span>
+                        <div class="main-thumb-product-detail montserrat-light">
+                            <div class="">In stock</div>
+                            <div><span class="font-color-product-detail">SKU</span>: SW108</div>
+                            <div><span class="font-color-product-detail">Category</span>: Chairs</div>
+                            <div>
+                                Pellentesque at neque porta, auctor felis eu, pulvinar magna.
+                                Donec placerat lectus nec ligula scelerisque scelerisque. Nulla fringilla
+                                urna scelerisque nisi mollis ultrices. Curabitur vulputate risus elementum,
+                                interdum dui quis, sodales risus.
+                            </div>
+                        </div>
+                            <div>
+                                <del class="montserrat-light">$190.00</del>
+                                <ins class="montserrat">$90.00</ins>
+                            </div>
+                            <div class="main-thumb-color-range">
+                                <div>Color:</div>
+                                <div class="block-color-range"></div>
+                                <div class="block-color-range"></div>
+                                <div class="block-color-range"></div>
+                                <div class="block-color-range"></div>
+                                <div class="block-color-range"></div>
+                            </div>
+
+
+                        <form class="number">
+                            <input type="text" value="01" class="montserrat" title=""/>
+                            <div class="container-plus-minus">
+                                <div class="plus"> + </div>
+                                <div class="minus"> - </div>
+                            </div>
+                            <button class="main-thumb-button montserrat">
+                                add to cart
+                            </button>
+                            <button class="main-thumb-button_like"> </button>
+                            <button class="main-thumb-button_line"></button>
+                        </form>
+                        <div class="main-thumb-social montserrat">
+                            Share on:
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------/main-thumb------------------------>
+
+
+        <!---------------------main-desc------------------------>
+        <div class="wpapper-main-desc">
+            <div class="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Description</a></li>
+                        <li><a href="#tabs-2">Reviews (23)</a></li>
+                        <li><a href="#tabs-3">Additional Information</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <h4>Product Description</h4>
+                        <p>Proident adipisicing laborum beef ribs tri-tip dolore meatball tempor rump flank prosciutto elit
+                            do. Duis tenderloin culpa excepteur. Fugiat irure est cupim dolor, ut nulla id andouille chicken
+                            spare ribs eiusmod brisket biltong. Eiusmod minim tail cupim labore ad filet mignon, andouille
+                            esse enim. Sausage salami dolor ex adipisicing consequat. Ground round nostrud ut fatback
+                            voluptate consequat in minim drumstick culpa dolore. Ea beef prosciutto in sirloin fatback
+                            enim velit consectetur in pork belly pancetta culpa shank.
+                        </p>
+                        <p>
+                            Shank quis in duis, id officia nulla. Pancetta sunt filet mignon porchetta doner turkey occaecat.
+                            Meatball corned beef elit ut fugiat. Hamburger biltong tail beef in cupim proident turducken picanha.
+                            Sausage chicken incididunt  ad occaecat porchetta pancetta corned beef ham hock laborum nisi ullamco
+                            pork loin kielbasa aliqua.
+                        </p>
+                        <p>
+                            In jerky minim chicken duis ground round nostrud pork belly occaecat pastrami commodo adipisicing
+                            tongue doner short loin. Officia est do, filet mignon shank pork loin anim esse quis kevin corned
+                            beef enim. Magna sint sirloin ham hock cupidatat laboris. Boudin spare ribs kevin meatloaf id short
+                            loin swine flank brisket aute. Reprehenderit turkey qui, boudin swine voluptate ipsum fugiat.
+                        </p>
+                        <p>
+                            Salami in ball tip pig eiusmod occaecat pork chop, consequat excepteur incididunt. Ground round
+                            picanha ut boudin exercitation jerky meatball strip steak ipsum labore spare ribs turducken ribeye
+                            ut aliquip. Id ipsum esse nisi ball tip chuck adipisicing
+                            sint culpa t-bone brisket bresaola mollit. Enim eu kevin, tail in nisi nulla sirloin adipisicing veniam dolore.
+                        </p>
+                    </div>
+                    <div id="tabs-2">
+                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                    </div>
+                    <div id="tabs-3">
+                        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!---------------------/main-desc------------------------>
+        <!---------------------main-slider------------------------>
+            <div class="container">
+                <div class="main-header-wraper">
+                    <a href="" class="main-slider-button_pre montserrat-bold slick-prev">
+                        Prew
+                    </a>
+                    <div class="main-slider-header montserrat-bold">
+                        related products
+                    </div>
+                    <a href="#" class="main-slider-button_next montserrat-bold ">
+                        Next
+                    </a>
+                </div>
+
+                <div class="main-slider-wrapper clearfix">
+                    <div class="item-slider montserrat">
+                        <div class="item-title ">
+                            Denim Chart In <br> Slim Fit
+                        </div>
+                        <div class="item-describ">
+                            Living room
+                        </div>
+                        <img src="images/main-banner-product1.png" alt="" width="208" height="208">
+
+                        <div class="item-price">
+                            <del class="montserrat-light">$150</del>
+                            <ins class="montserrat">$124</ins>
+                        </div>
+                    </div>
+
+                    <div class="item-slider montserrat">
+                        <div class="item-title ">
+                            Ballari Chair <br> Hodak
+                        </div>
+                        <div class="item-describ">
+                            Bedroom
+                        </div>
+                        <img src="images/main-banner-product2.png" alt="" width="208" height="208">
+
+                        <div class="item-price">
+                            <del class="montserrat-light">$85</del>
+                            <ins class="montserrat">$76</ins>
+                        </div>
+                    </div>
+
+                    <div class="item-slider montserrat">
+                        <div class="item-title ">
+                            Shayla Pendant <br>  Chair
+                        </div>
+                        <div class="item-describ">
+                            Living room
+                        </div>
+                        <div class="slider-ellipse-wrapper">
+                            <img src="images/main-banner-product1.png" alt="" width="208" height="208">
+                            <div class="slider-ellipse">sale</div>
+                        </div>
+                        <div class="item-price">
+                            <del class="montserrat-light">$100</del>
+                            <ins class="montserrat">$92</ins>
+                        </div>
+                    </div>
+
+                    <div class="item-slider montserrat">
+                        <div class="item-title ">
+                            Cloverfield Wilcot <br> Chair
+                        </div>
+                        <div class="item-describ">
+                            Bedroom
+                        </div>
+                        <img src="images/main-banner-product2.png" alt="" width="208" height="208">
+
+                        <div class="item-price">
+                            <del class="montserrat-light">$150</del>
+                            <ins class="montserrat">$117</ins>
+                        </div>
+                    </div>
+
+                    <div class="item-slider montserrat">
+                        <div class="item-title ">
+                            Denim Chart In <br> Slim Fit
+                        </div>
+                        <div class="item-describ">
+                            Living room
+                        </div>
+                        <img src="images/main-banner-product1.png" alt="" width="208" height="208">
+
+                        <div class="item-price">
+                            <del class="montserrat-light">$150</del>
+                            <ins class="montserrat">$124</ins>
+                        </div>
+                    </div>
+
+                    <div class="item-slider montserrat">
+                        <div class="item-title ">
+                            Ballari Chair <br> Hodak
+                        </div>
+                        <div class="item-describ">
+                            Bedroom
+                        </div>
+                        <img src="images/main-banner-product2.png" alt="" width="208" height="208">
+
+                        <div class="item-price">
+                            <del class="montserrat-light">$85</del>
+                            <ins class="montserrat">$76</ins>
+                        </div>
+                    </div>
+
+                    <div class="item-slider montserrat">
+                        <div class="item-title ">
+                            Shayla Pendant <br>  Chair
+                        </div>
+                        <div class="item-describ">
+                            Living room
+                        </div>
+                        <div class="slider-ellipse-wrapper">
+                            <img src="images/main-banner-product1.png" alt="" width="208" height="208">
+                            <div class="slider-ellipse">sale</div>
+                        </div>
+                        <div class="item-price">
+                            <del class="montserrat-light">$100</del>
+                            <ins class="montserrat">$92</ins>
+                        </div>
+                    </div>
+
+                    <div class="item-slider montserrat">
+                        <div class="item-title ">
+                            Cloverfield Wilcot <br> Chair
+                        </div>
+                        <div class="item-describ">
+                            Bedroom
+                        </div>
+                        <img src="images/main-banner-product2.png" alt="" width="208" height="208">
+
+                        <div class="item-price">
+                            <del class="montserrat-light">$150</del>
+                            <ins class="montserrat">$117</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!---------------------/main-slider------------------------>
+        <!---------------------  testimonials-------------------- -->
+            <div class="main-wrapper-testimonials">
+                <div class="container">
+                    <div class="main-testimonials clearfix">
+                        <h2 class="montserrat-bold">testimonials</h2>
+                        <div class="line-testimonials"></div>
+                        <div class="testimonials-describ montserrat">
+                            With over a decade of experience, we have helped our clients all
+                            over the world to create eye-catching
+                            and head-turning creative solutions.
+                            We work together from our three UK offices to create high quality work.
+                        </div>
+                        <div class="icon-testimonials-wrapper">
+                            <div class="icon-testimonials"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <!---------------------  testimonials-------------------- -->
+        <!---------------------  newsletter-------------------- -->
+    <div class="container container-main-newsletter">
+        <div class="main-newsletter">
+            <div class="main-newsletter-column1 montserrat">
+
+                <h5>newsletter</h5>
+                <p>Keep up on our always evolving product features and technology.
+                    Enter your e-mail and subscribe to our newsletter.</p>
+
+            </div>
+            <div class="main-newsletter-column2">
+                <form class="newsletter-form montserrat-light" action="#">
+                    <input type="search" placeholder="Email address" >
+                    <button class="montserrat">subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+        <!---------------------  newsletter-------------------- -->
+        <!---------------------  FREE SHIPPING-------------------- -->
+    <div class="main-freeshipping">
+        <div class="container">
+            <div class="main-freeshipping-wrapper">
+                    <div class="main-freeshipping-column1"><a class="montserrat-bold" href="#">FREE SHIPPING</a></div>
+                    <div class="main-freeshipping-column2"><a class="montserrat-bold" href="#">CUSTOMER SUPPORT</a></div>
+                    <div class="main-freeshipping-column3"><a class="montserrat-bold" href="#">15 DAYS MONEY BACK</a></div>
+                    <div class="main-freeshipping-column4"><a class="montserrat-bold" href="#">24/7 Help Center</a></div>
+            </div>
+        </div>
+    </div>
+
+</main>
+    <!---------------------  FREE SHIPPING-------------------- -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper montserrat-bold">
+                <div class="footer-column1 footer-column">
+                    <a class="montserrat" href="tel:+18002777766">call us
+                        <div class="footer-phone">
+                            1-800-277-7766
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-column2 footer-column">
+                    <a class="montserrat" href="https://www.google.com.ua">location
+                        <address class="footer-location">
+                            Moscow, Pushkin str. 32/A
+                        </address>
+                    </a>
+                </div>
+                <div class="footer-column3 footer-column">
+                    <a class="montserrat" href="https://www.dropbox.com">mail
+                        <div class="footer-mail">
+                            info@domain.com
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom montserrat-bold">
+                <div>2016 Domain.com. All rights reserved</div>
+                <div>Terms & Conditions
+                   Privacy
+                   Downloads
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script src="jquery-ua/jquery-ui.min.js"></script>
+    <script src="js/index1.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>
