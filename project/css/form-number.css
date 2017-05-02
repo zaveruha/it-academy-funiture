@@ -1,0 +1,92 @@
+.container-form-number{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.main-thumb-detail form {
+    max-width: 300px;
+    margin-top: 30px;
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*text-align: left;*/
+    position: relative;
+    /*padding-top: 80px;*/
+}
+
+.main-thumb-detail input {
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+input.invalid {
+    border-color: #ff0000;
+}
+
+#notify {
+    margin-top: 5px;
+    padding: 21px 21px 21px 3px;
+    font-size: 18px;
+    width: 120%;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: -101px;
+    left: 0;
+}
+
+#notify.error {
+    background-color: #ff0000;
+}
+
+.plus, .minus{
+    /*position: absolute;*/
+    top:0;
+    left: 20px;
+    cursor:pointer;
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-left: none;
+    font-size: 26px;
+    text-align: center;
+    background: none;
+}
+
+.number{
+    display: flex;
+}
+
+.plus{
+    align-self: flex-start;
+}
+
+.minus{
+    border-top: none;
+    position: absolute;
+    top: 30px;
+    left: 59px;
+}
+
+@media (max-width: 450px){
+
+    .container-form-number{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-thumb-buttons {
+        margin-top: -12px;
+    }
+
+    .main-thumb-button_like,
+    .main-thumb-button_line{
+        margin-left: 0;
+        margin-right:15px;
+    }
+}

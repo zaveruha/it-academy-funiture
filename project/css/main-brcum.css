@@ -1,0 +1,66 @@
+/*----------------------main-brcum---------------*/
+
+
+.container-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-brcum-background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7e7;
+    max-width:100%;
+    min-width: 13.83%;
+    height: 117px;
+}
+
+.main-brcum{
+    font-size: 3rem; /*30px*/
+    text-transform: uppercase;
+    color: #232323;
+    padding-left: 2.4%;
+}
+
+.main-brcum:last-child {
+    padding-right: 2.6%;
+    font-size: 1.4rem; /*14px*/
+    color: #666666;
+}
+
+.main-brcum-home, .main-brcum-products{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-brcum-home {
+    color: #999999;
+}
+
+@media (min-width: 0px) and (max-width: 355px){
+    .main-brcum-background{
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+    }
+
+    .main-brcum:first-child {
+        padding-top:9%;
+        padding-left:0;
+    }
+
+    .main-brcum:last-child {
+        padding-top:6%;
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 655px) {
+    .main-brcum {
+        font-size: 25px;
+    }
+}
+
+/*----------------------/main-brcum--------------*/

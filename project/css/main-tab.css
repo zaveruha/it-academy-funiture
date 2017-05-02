@@ -1,0 +1,122 @@
+.wrapper {
+    display: block;
+    background-color: #f7f7f7;
+    /*margin-bottom: 50px;*/
+}
+
+.wrapper label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height:24px;
+    position: relative;
+    top:1px;
+    cursor:pointer;
+    float: left;
+    margin-right: 5px;
+    display: block;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    background-color: #ffffff;
+    border-left: 1px solid #be926f;
+    border-right: 1px solid #be926f;
+    border-top: 1px solid #be926f;
+}
+
+
+.wrapper label:nth-of-type(1){
+    padding-right: 2.8%;
+    padding-left: 1.53%;
+}
+
+.wrapper label:nth-of-type(1),.wrapper label:nth-of-type(2),
+.wrapper label:nth-of-type(3) {
+    padding-top: 15px;
+}
+
+.wrapper label:nth-of-type(2){
+    padding-left: 1.9%;  /*23px;*/
+    padding-right: 2.6%; /*27px;*/
+}
+
+.wrapper label:nth-of-type(3){
+    padding-left: 1.5%; /*17px;*/
+    padding-right: 4.2%; /*17px;*/
+}
+
+.wrapper input {
+    display: none;
+}
+
+.wrapper input:checked + label {
+    position: relative;
+    top:1px;
+    padding-top: 12px;
+    background-color: #ffffff;
+    color: #be926f;
+    border-top:4px solid #be926f;
+    z-index: 10;
+}
+
+.wrapper input[id="tab-1"]:checked ~ .content .tab-1,
+.wrapper input[id="tab-2"]:checked ~ .content .tab-2,
+.wrapper input[id="tab-3"]:checked ~ .content .tab-3{
+    display: block;
+    overflow: hidden;
+}
+
+.wrapper .content {
+    clear:both;
+    position: relative;
+}
+
+.wrapper article {
+    display: none;
+    min-height: 150px;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    box-sizing:border-box;
+    width: 100%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1.55%;
+    line-height:1.5;
+    background-color: #fff;
+    border:1px solid #be926f;
+}
+
+.wrapper h4{
+    margin: 0;
+    padding: 0.6% 0 0.8%;
+    font-size: 16px;
+}
+
+.wrapper p, .wrapper article p{
+    font-family: 'Montserrat Light', sans-serif;
+    font-size: 16px;
+    color: #666666;
+    padding-bottom: 0.7%;
+}
+
+@media (min-width: 0) and (max-width: 560px) {
+    .wrapper label:nth-of-type(1),.wrapper label:nth-of-type(2),
+    .wrapper label:nth-of-type(3) {
+        text-align: center;
+        box-sizing: border-box;
+        width: 100%;
+        margin-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .wrapper label {
+        background-color: #f7f7f7;
+    }
+
+    .wrapper input:checked + label {
+        background-color: #be926f;
+        color: #ffffff;
+        border-top:10px solid #ffffff;
+        border-radius:20px 20px 0 0;
+    }
+}
